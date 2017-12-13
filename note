@@ -1,0 +1,20 @@
+execvp execlp - path, no p then full path
+
+execv execve execvp - arg list
+
+execl execlp execle -varags
+
+execve execle - env variables "VARIABLE=name"
+
+$? return value of process
+
+exit code- 0 to 127, by signal is 128+signal number
+
+wait3, wait4 -WNOHANG to not block wait.
+
+asynchronously cancellable
+synchronously cancellable
+uncancelable
+fast mutex
+recursive mutex
+error checking mutex EDEADLK
