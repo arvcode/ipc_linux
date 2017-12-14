@@ -18,3 +18,8 @@ uncancelable
 fast mutex
 recursive mutex
 error checking mutex EDEADLK
+clone call-fork +pthread_create(execution stack memory region to be specified)
+process use copy on write, if reading then they share the same memory.
+threads-fine-grained parellelism
+process-coarse-grained parallelism
+proces semaphore-System V semaphore
