@@ -23,3 +23,12 @@ process use copy on write, if reading then they share the same memory.
 threads-fine-grained parellelism
 process-coarse-grained parallelism
 proces semaphore-System V semaphore
+socket, close
+connect
+bind, listen, accept
+2001:0db8:c9d2:aee5:73e3:934a:a5ae:9551
+2001:db8:c9d2:12::51
+2001:db8::
+::1
+::ffff:192.168.1.1 IPv4 to IPv6 representation
+
