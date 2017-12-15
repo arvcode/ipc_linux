@@ -8,7 +8,6 @@
 int main() {
 	int fd=0;
 	void *memmap=NULL;
-
 	fd=open("data",O_RDWR|O_CREAT,S_IRUSR|S_IWUSR);
 	//lseek(fd,FILE_SIZE+1,SEEK_SET);
 	write(fd,"MEMMAP FILE",12);
@@ -18,6 +17,7 @@ int main() {
 	close(fd);
 
 	sprintf((char*)memmap,"%s","File write");
+	msync(memmap,FILE_SIZE, MS_SYNC|MS_INVALIDATE);
 	munmap(memmap,FILE_SIZE); 
 	return 0;
 }
