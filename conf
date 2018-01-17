@@ -1,0 +1,13 @@
+autoconf reads configure.ac to make configure script
+./configure
+make
+make install
+
+libtoolize --force
+aclocal
+autoheader
+automake --force-missing --add-missing
+autoconf
+./configure
+
+
