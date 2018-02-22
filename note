@@ -32,3 +32,12 @@ bind, listen, accept
 ::1
 ::ffff:192.168.1.1 IPv4 to IPv6 representation
 
+system load
+dd if=/dev/zero of=/dev/null
+uptime
+top
+/proc/loadavg
+/w
+while :; do :; done
+yes >/dev/null
+while true; do echo; done
